@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --colorPrimary: #FF007B;
+  --colorSecondary: #7E6ABE;
+  --colorHighlight: #c94662;
+
+  --colorBlack: #221f20;
+  --colorWhite: #ffe3ec;
+
+  --colorYellow: #FBC02D;
+}
+
+.bg_home_image{
+  background-image: url('./resources/background_cover.png');
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+
+
+.button_1{
+  @apply
+  /* border-[0.15rem] border-[var(--colorYellow)] */
+  px-10 py-2
+
+  text-white font-medium
+  bg-black
+  border-[0.2rem] border-black
+  rounded-lg
+
+  shadow-2xl 
+  
+  md:px-8 md:py-3
+}
+
+.button_1:hover{
+  @apply
+
+  bg-white
+  border-[0.2rem] border-black
+  text-black
+  transition-all duration-150
+}
+
+
+
+.presentation_text {
+  text-shadow: 2px 2px 8px #000000;
+  color: #FFFFFF;
+  }
+
+
+
+
